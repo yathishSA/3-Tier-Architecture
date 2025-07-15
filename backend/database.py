@@ -4,10 +4,10 @@ import os
 
 def get_db_connection():
     connection = mysql.connector.connect(
-        host=os.environ.get("DB_HOST"),
-        user=os.environ.get("DB_USER"),
-        password=os.environ.get("DB_PASSWORD"),
-        database=os.environ.get("DB_NAME")
+        host=os.environ.get("database.c6xkqykomymw.us-east-1.rds.amazonaws.com"),
+        user=os.environ.get("admin"),
+        password=os.environ.get("admin1234"),
+        database=os.environ.get("db")
     )
     return connection
 
